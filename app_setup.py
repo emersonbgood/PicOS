@@ -1,4 +1,5 @@
-import machine as M, os, gc, time as T
+import machine as M, os, gc, time as T, waveshare as V
+d = V.lcd_st7796()
 APP_NAME = "SETTINGS"
 ICON_COLOR = 0x7BEF
 ICON_IMAGE = "icon_settings.txt"
@@ -94,3 +95,4 @@ def handle_touch(x, y, display, txt):
             load_ui(display, txt); T.sleep_ms(150)
             
     return None
+
